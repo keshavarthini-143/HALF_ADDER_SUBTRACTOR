@@ -64,19 +64,18 @@ Developed by: KESHAVARTHINI B RegisterNumber:*/ 24900033
 
 HALF ADDER
 
-module halfsubtractor(a,b,dif,bor);
+module half_adder(a,b,s,ca);
 
 input a,b;
 
-output dif,bor;
+output s,ca;
 
-assign dif=a^b;
+assign s=a^b;
 
-assign x=~a;
-
-assign bor=b&x;
+assign ca=a&b;
 
 endmodule
+
 
 
 HALFSUBTRACTOR
